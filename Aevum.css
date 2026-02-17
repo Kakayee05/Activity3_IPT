@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    background-color: rgb(255, 255, 255);
 }
 
 input[type="radio"] {
@@ -37,16 +36,13 @@ input[type="radio"] {
 
 #contact:checked ~ #contact-content {
     display: block;
+}
 
-}
-#contact:checked ~ #contact-content ~img {
-    justify-content: center;
-}
 .logo{
     margin-top: -150px;
     margin-bottom: -100;
-
 }
+
 .banner {
     width: 100%;
     max-width: 1230px;
@@ -62,12 +58,14 @@ input[type="radio"] {
     gap: 50px;
     margin-top: 30px;
 }
+
 .footer {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
     font-size: 14px;
 }
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -78,8 +76,25 @@ input[type="radio"] {
     background: rgb(216, 216, 216);
     border: 5px;
     padding: 10px;
-    
 }
+
+.point {
+    border-radius: 10%;
+    display: inline-block;
+    margin: 10px;
+}
+
+#about-content {
+    text-align: center;
+}
+
+#contact-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .nav {
         flex-direction: column;
@@ -94,7 +109,6 @@ input[type="radio"] {
         width: 100%;
         text-align: center;
         border-bottom: 1px solid #000000;
-        
     }
     
     .nav label:last-child {
@@ -115,6 +129,5 @@ input[type="radio"] {
     .info-container {
         padding: 15px;
         margin: 10 10 20 20;
-        
     }
 }
